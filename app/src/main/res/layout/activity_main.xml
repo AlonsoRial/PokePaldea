@@ -7,7 +7,7 @@
 
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#FFFFFF"
@@ -15,15 +15,32 @@
 
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="0dp"
+            android:id="@+id/pokedex"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="#33363E"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:gravity="center"
-            tools:text="PokePaldea" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:background="@color/black"
+            android:text="Pokedex"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/lista"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/pokedex"
+            android:layout_marginTop="0dp"
+            android:background="@color/teal_200"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src=""
+                />
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
 </layout>
